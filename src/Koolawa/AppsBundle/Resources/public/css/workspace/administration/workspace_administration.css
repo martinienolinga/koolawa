@@ -1,0 +1,61 @@
+#administrationPanel
+{
+	border: 5px solid #a93226;
+}
+
+.workzone_administration #administrationPanel > div > div > div[data-ref="innerCt"]
+{
+	background-color: #ddd;
+}
+
+.workzone_administration .x-tool-img { background-color: #a93226 !important; }
+
+.workzone_administration .x-panel-default-framed { border-color: #a93226 !important; }
+.workzone_administration .tab-menu > div > div > div[data-ref="innerCt"]
+{
+	background-color: #eee !important;
+	border-top: 1px solid white;
+	background-image:
+	linear-gradient(
+		to top, 
+		#eeeeee, #f4f4f4
+    );
+}
+
+.workzone_administration #administrationMenu .x-tab-default-top:first-child
+{
+	background-color:#641e16 !important;
+	border-color:#641e16 !important
+}
+
+.workzone_administration #administrationMenu .x-tab-default-top.x-tab-active:first-child .x-tab-inner { color: white !important; }
+
+.workzone_administration.x-border-layout-ct, .workzone_administration .x-border-layout-ct { background-color: #c0392b !important; }
+.workzone_administration .x-tab-bar { background-color: #a93226 !important; }
+.workzone_administration .x-tab-top { background-color: #c0392b !important; border-color: #c0392b !important; }
+.workzone_administration .x-tab-bottom { background-color: #c0392b !important; border-color: #c0392b !important; }
+.workzone_administration .x-tab-over { background-color: #cd6155 !important; border-color: #cd6155 !important; }
+.workzone_administration .x-tab-active { background-color: #e6b0aa !important; border-color: #e6b0aa !important; }
+.workzone_administration .x-tab-bar-strip { background-color: #e6b0aa !important; border-color: #e6b0aa !important; }
+.workzone_administration .x-tab-bar-strip.fmenu { background-color: #641e16 !important; border-color: #641e16 !important; }
+
+.workzone_administration .x-tab-active .x-tab-inner { color: #a93226 !important; }
+
+.workzone_spreadsheet .x-panel-header-default
+{
+    background-color: #a93226 !important;
+    border: 1px solid #a93226 !important;
+}
+
+.workzone_administration .shortmenu { background-color: #c0392b; }
+.workzone_administration .shortmenu:hover { background-color: #cd6155; }
+.workzone_administration .shortmenu:active { background-color: #e6b0aa; }
+
+.workzone_administration .filemenucontent #filemenu1 .filemenubutton.extendshot.x-btn-pressed:hover
+{
+	border: 1px solid #a93226 !important;
+	border-right: none !important;
+	border-left: none !important;
+}
+
+.workzone_administration .filemenucontent #filemenu1 .filemenubutton.extendshot.x-btn-pressed { background-color: #a93226 !important; }

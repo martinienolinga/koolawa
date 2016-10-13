@@ -1,0 +1,57 @@
+#writePanel
+{
+	border: none;
+	
+	-moz-border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	border-radius: 0 !important;	
+}
+
+#writeRulerPanel
+{
+	border: 5px solid #157fcc;
+}
+
+.workzone_write #writePanel > div > .xscrollbar-center > div > div > div[data-ref="innerCt"]
+{
+	background-color: #ddd;
+	width: 100%;
+	/*box-shadow: 0 0 5px gray inset !important;*/
+}
+
+.workzone_write .x-panel-default-framed { border-color: #157fcc !important; }
+.workzone_write .tab-menu > div > div > div[data-ref="innerCt"]
+{
+	background-color: #eee !important;
+	border-top: 1px solid white;
+	background-image:
+	linear-gradient(
+		to top, 
+		#eeeeee, #f4f4f4
+    );
+}
+
+.workzone_write #writeMenu .x-tab-default-top:first-child
+{
+	background-color:#1065a3 !important;
+	border-color:#1065a3 !important
+}
+
+.workzone_write #writeMenu .x-tab-default-top.x-tab-active:first-child .x-tab-inner { color: white !important; }
+
+.workzone_write .x-tab-bar-strip.fmenu { background-color: #1065a3 !important; border-color: #1065a3 !important; }
+
+.workzone_write .shortmenu { background-color: #4b9cd7; }
+.workzone_write .shortmenu:hover { background-color: #5fa7db; }
+.workzone_write .shortmenu:active { background-color: #add2ed; }
+
+.workzone_write .filemenucontent #filemenu1 .filemenubutton.extendshot.x-btn-pressed:hover
+{
+	border: 1px solid #157FCC !important;
+	border-right: none !important;
+	border-left: none !important;
+}
+
+.workzone_write .filemenucontent #filemenu1 .filemenubutton.extendshot.x-btn-pressed { background-color: #157FCC !important; }
+
+

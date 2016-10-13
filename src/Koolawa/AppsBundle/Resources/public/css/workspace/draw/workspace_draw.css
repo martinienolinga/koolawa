@@ -1,0 +1,61 @@
+#drawPanel
+{
+	border: 5px solid #839192;
+}
+
+.workzone_draw #drawPanel > div > div > div[data-ref="innerCt"]
+{
+	background-color: #ddd;
+}
+
+.workzone_draw .x-tool-img { background-color: #839192 !important; }
+
+.workzone_draw .x-panel-default-framed { border-color: #839192 !important; }
+.workzone_draw .tab-menu > div > div > div[data-ref="innerCt"]
+{
+	background-color: #eee !important;
+	border-top: 1px solid white;
+	background-image:
+	linear-gradient(
+		to top, 
+		#eeeeee, #f4f4f4
+    );
+}
+
+.workzone_draw #drawMenu .x-tab-default-top:first-child
+{
+	background-color:#4D5656 !important;
+	border-color:#4D5656 !important
+}
+
+.workzone_draw #drawMenu .x-tab-default-top.x-tab-active:first-child .x-tab-inner { color: white !important; }
+
+.workzone_draw.x-border-layout-ct, .workzone_draw .x-border-layout-ct { background-color: #95A5A6 !important; }
+.workzone_draw .x-tab-bar { background-color: #839192 !important; }
+.workzone_draw .x-tab-top { background-color: #95A5A6 !important; border: 1px solid #95A5A6 !important; }
+.workzone_draw .x-tab-bottom { background-color: #95A5A6 !important; border: 1px solid #95A5A6 !important; }
+.workzone_draw .x-tab-over { background-color: #AAB7B8 !important; border: 1px solid #AAB7B8 !important; }
+.workzone_draw .x-tab-active { background-color: #D5DBDB !important; border: 1px solid #D5DBDB !important; }
+.workzone_draw .x-tab-bar-strip { background-color: #D5DBDB !important; border: 1px solid #D5DBDB !important; }
+.workzone_draw .x-tab-bar-strip.fmenu { background-color: #4D5656 !important; border-color: #4D5656 !important; }
+
+.workzone_draw .x-tab-active .x-tab-inner { color: #839192 !important; }
+
+.workzone_draw .x-panel-header-default
+{
+    background-color: #839192 !important;
+    border: 1px solid #839192 !important;
+}
+
+.workzone_draw .shortmenu { background-color: #95A5A6; }
+.workzone_draw .shortmenu:hover { background-color: #AAB7B8; }
+.workzone_draw .shortmenu:active { background-color: #D5DBDB; }
+
+.workzone_draw .filemenucontent #filemenu1 .filemenubutton.extendshot.x-btn-pressed:hover
+{
+	border: 1px solid #839192 !important;
+	border-right: none !important;
+	border-left: none !important;
+}
+
+.workzone_draw .filemenucontent #filemenu1 .filemenubutton.extendshot.x-btn-pressed { background-color: #839192 !important; }

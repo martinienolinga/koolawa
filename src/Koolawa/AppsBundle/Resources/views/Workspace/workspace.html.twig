@@ -1,0 +1,46 @@
+{# src/T2SA/UserBundle/Resources/views/Security/login.html.twig #}
+
+{% extends "KoolawaCoreBundle::layout.html.twig" %}
+
+{% block head %}
+    
+    {% stylesheets '@KoolawaAppsBundle/Resources/public/css/koolawa.css'
+                   '@KoolawaAppsBundle/Resources/public/css/icones.css'
+                   '@KoolawaAppsBundle/Resources/public/css/codemirror/*.css'
+                   '@KoolawaAppsBundle/Resources/public/css/toggleslide/*.css'
+                   '@KoolawaAppsBundle/Resources/public/css/workspace/*.css'
+                   '@KoolawaAppsBundle/Resources/public/css/workspace/*/*.css'
+    filter='cssrewrite, yui_css' %}
+        <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+    
+    
+    {% javascripts '@KoolawaAppsBundle/Resources/public/js/global.js'
+                   '@KoolawaAppsBundle/Resources/public/js/symfony.js'
+                   '@KoolawaAppsBundle/Resources/public/js/workspace/workspace.js'
+                   '@KoolawaAppsBundle/Resources/public/js/workspace/workspace_default.js'
+                   '@KoolawaAppsBundle/Resources/public/js/workspace/centerpanel.js'
+                   '@KoolawaAppsBundle/Resources/public/js/workspace/*/*.js'
+                   '@KoolawaAppsBundle/Resources/public/js/codemirror/*.js'
+                   '@KoolawaAppsBundle/Resources/public/js/codemirror/*/*.js'
+                   '@KoolawaAppsBundle/Resources/public/js/toggleslide/*.js'
+    filter='' %}
+        <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+    <script type="text/javascript">
+		var _workspace = '{{ _workspace }}';
+		var _locale = '{{ _locale }}';
+		var _script_name = '{{ _script_name }}';
+		var _request_scheme = '{{ _request_scheme }}';
+		var _http_host = '{{ _http_host }}';
+	</script>
+    
+{% endblock %}
+
+
+{% block body %}
+    <input id="_error_message" type="hidden" value="{% if error %}{{ error.message }}{% endif %}" />
+    <input id="_last_username" type="hidden" value="{{ last_username }}" />
+{% endblock %}
+

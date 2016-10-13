@@ -1,0 +1,12 @@
+services:
+#    koolawa_ajax.example:
+#        class: Koolawa\AjaxBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
+
+    koolawa_ajax.user:
+        class: Koolawa\AjaxBundle\Controller\UserController
+        arguments: [@service_container]
+
+    koolawa_ajax.storage:
+        class: Koolawa\AjaxBundle\Controller\StorageController
+        arguments: [@service_container]

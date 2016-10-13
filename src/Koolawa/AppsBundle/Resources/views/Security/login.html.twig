@@ -1,0 +1,29 @@
+{# src/Koolawa/AppsBundle/Resources/views/Security/login.html.twig #}
+
+{% extends "KoolawaCoreBundle::layout.html.twig" %}
+
+{% block body %}
+
+  {% stylesheets '@KoolawaAppsBundle/Resources/public/css/koolawa.css'
+                 '@KoolawaAppsBundle/Resources/public/css/icones.css' 
+                 '@KoolawaAppsBundle/Resources/public/css/security.css' 
+  filter='cssrewrite, yui_css' %}
+  <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}
+
+  {% javascripts '@KoolawaAppsBundle/Resources/public/js/*.js' filter='yui_js' %}
+  <script type="text/javascript" src="{{ asset_url }}"></script>
+  {% endjavascripts %}
+
+  <script type="text/javascript">
+    var _locale = '{{ _locale }}';
+    var _script_name = '{{ _script_name }}';
+    var _request_scheme = '{{ _request_scheme }}';
+    var _http_host = '{{ _http_host }}';
+  </script>
+
+  <input id="_error_message" type="hidden" value="{% if error %}{{ error.message|trans }}{% endif %}" />
+  <input id="_last_username" type="hidden" value="{{ last_username }}" />
+  <input type="hidden" id="csrf_token" value="{{ token }}" />
+
+{% endblock %}

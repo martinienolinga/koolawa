@@ -1,0 +1,22 @@
+login:
+    path: /{_locale}/{_workspace}
+    defaults: 
+        _controller: KoolawaAppsBundle:Security:login
+        _locale: fr
+        _workspace: home
+    requirements:
+        _locale:  en|fr|de|it
+    
+login_check:
+    path: /login_check
+
+login_check_locale:
+    path: /{_locale}/login_check
+    defaults: 
+        _controller: KoolawaAppsBundle:Security:login
+        _locale: fr
+    requirements:
+        _locale:  en|fr|de|it
+
+logout:
+    path: /logout

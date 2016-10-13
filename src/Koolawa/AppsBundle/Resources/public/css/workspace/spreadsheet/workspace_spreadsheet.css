@@ -1,0 +1,61 @@
+#spreadsheetPanel
+{
+	border: 5px solid #229954;
+}
+
+.workzone_spreadsheet #spreadsheetPanel > div > div > div[data-ref="innerCt"]
+{
+	background-color: #ddd;
+}
+
+.workzone_spreadsheet .x-tool-img { background-color: #229954 !important; }
+
+.workzone_spreadsheet .x-panel-default-framed { border-color: #229954 !important; }
+.workzone_spreadsheet .tab-menu > div > div > div[data-ref="innerCt"]
+{
+	background-color: #eee !important;
+	border-top: 1px solid white;
+	background-image:
+	linear-gradient(
+		to top, 
+		#eeeeee, #f4f4f4
+    );
+}
+
+.workzone_spreadsheet #spreadsheetMenu .x-tab-default-top:first-child
+{
+	background-color:#145a32 !important;
+	border-color:#145a32 !important
+}
+
+.workzone_spreadsheet #spreadsheetMenu .x-tab-default-top.x-tab-active:first-child .x-tab-inner { color: white !important; }
+
+.workzone_spreadsheet.x-border-layout-ct, .workzone_spreadsheet .x-border-layout-ct { background-color: #27ae60 !important; }
+.workzone_spreadsheet .x-tab-bar { background-color: #229954 !important; }
+.workzone_spreadsheet .x-tab-top { background-color: #27ae60 !important; border-color: #27ae60 !important; }
+.workzone_spreadsheet .x-tab-bottom { background-color: #27ae60 !important; border-color: #27ae60 !important; }
+.workzone_spreadsheet .x-tab-over { background-color: #52be80 !important; border-color: #52be80 !important; }
+.workzone_spreadsheet .x-tab-active { background-color: #a9dfbf !important; border-color: #a9dfbf !important; }
+.workzone_spreadsheet .x-tab-bar-strip { background-color: #a9dfbf !important; border-color: #a9dfbf !important; }
+.workzone_spreadsheet .x-tab-bar-strip.fmenu { background-color: #145a32 !important; border-color: #145a32 !important; }
+
+.workzone_spreadsheet .x-tab-active .x-tab-inner { color: #229954 !important; }
+
+.workzone_spreadsheet .x-panel-header-default
+{
+    background-color: #229954 !important;
+    border: 1px solid #229954 !important;
+}
+
+.workzone_spreadsheet .shortmenu { background-color: #27ae60; }
+.workzone_spreadsheet .shortmenu:hover { background-color: #52be80; }
+.workzone_spreadsheet .shortmenu:active { background-color: #a9dfbf; }
+
+.workzone_spreadsheet .filemenucontent #filemenu1 .filemenubutton.extendshot.x-btn-pressed:hover
+{
+	border: 1px solid #229954 !important;
+	border-right: none !important;
+	border-left: none !important;
+}
+
+.workzone_spreadsheet .filemenucontent #filemenu1 .filemenubutton.extendshot.x-btn-pressed { background-color: #229954 !important; }

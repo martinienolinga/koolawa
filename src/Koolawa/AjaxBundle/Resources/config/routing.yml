@@ -1,0 +1,5 @@
+ajax:
+    pattern: /ajax/{controller}/{action}
+    defaults: { _controller: KoolawaAjaxBundle:Ajax:run, _format: json }
+    requirements:
+        _method: POST

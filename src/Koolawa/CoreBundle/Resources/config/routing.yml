@@ -1,0 +1,3 @@
+koolawa_core_homepage:
+    path:     /
+    defaults: { _controller: KoolawaCoreBundle:Default:index }

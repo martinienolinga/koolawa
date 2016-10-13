@@ -1,0 +1,132 @@
+/*.workzone_storage .storagetab
+{
+	padding: 10px;
+}*/
+
+.tab-kind-directory, .tab-kind-directory *
+{
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+}
+
+.workzone_storage .tabitem
+{
+	cursor: pointer;
+    display: inline-block;
+    float: left;
+    height: 100px;
+    margin: 5px;
+    text-align: center;
+    width: 110px;
+    word-wrap: break-word;
+	overflow: hidden;
+	
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-khtml-border-radius: 3px;
+}
+
+.workzone_storage .tabitem .thumb
+{
+	display: inline-block;
+    height: 48px;
+    width: 48px;
+    margin-top: 5px;
+}
+
+.workzone_storage .tabitem .label
+{
+    text-align: center;
+    width: 100px;
+    word-wrap: break-word;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.workzone_storage .tabitemselected
+{
+	background-color: #ddd;
+}
+
+.workzone_storage .tabitem:hover
+{
+	background-color: #eee;
+}
+
+.workzone_storage .tabitemselected:hover
+{
+	background-color: #ddd;
+}
+
+.storagepath, .storagepath .x-panel-body,
+.storagestatus, .storagestatus .x-panel-body
+{
+	background-color: #add2ed;
+}
+
+.storagestatus
+{
+	line-height: 34px;
+	padding-left: 10px;
+}
+
+.storagepath
+{
+	height: 30px;
+	padding: 0 5px;
+	overflow: hidden;
+}
+
+.com .storagepath
+{
+	height: 34px;
+	padding: 5px;
+}
+
+.storagecontent
+{
+	background-color: white;
+	padding: 10px;
+	/*overflow-y: scroll;*/
+	/*overflow: auto;*/
+}
+
+.fileitems
+{
+	overflow: auto;
+}
+
+.storagepath .x-btn
+{
+	border-radius: 0 !important;
+   -moz-border-radius: 0 !important;
+   -khtml-border-radius: 0 !important;
+	
+	border-left: none !important;
+}
+
+.storagepath .x-btn:first-child
+{
+	border-top-left-radius: 3px !important;
+   -moz-border-top-left-radius: 3px !important;
+   -khtml-border-top-left-radius: 3px !important;
+
+	border-bottom-left-radius: 3px !important;
+   -moz-border-bottom-left-radius: 3px !important;
+   -khtml-border-bottom-left-radius: 3px !important;
+
+	border-left: 1px solid #126daf !important;
+}
+
+.storagepath .x-btn:last-child
+{
+	border-top-right-radius: 3px !important;
+   -moz-border-top-right-radius: 3px !important;
+   -khtml-border-top-right-radius: 3px !important;
+
+	border-bottom-right-radius: 3px !important;
+   -moz-border-bottom-right-radius: 3px !important;
+   -khtml-border-bottom-right-radius: 3px !important;
+}
