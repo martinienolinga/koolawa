@@ -1,0 +1,9 @@
+koolawa_ajax:
+    resource: "@KoolawaAjaxBundle/Resources/config/routing.yml"
+    prefix:   /
+
+koolawa_apps:
+    resource: "@KoolawaAppsBundle/Resources/config/routing.yml"
+    prefix:   /
+
+

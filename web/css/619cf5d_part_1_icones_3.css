@@ -1,0 +1,118 @@
+
+.tabs {
+    background-image: url(../bundles/koolawacore/images/koolawa/awn-settings.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-paste {
+    background-image: url(../bundles/koolawacore/images/koolawa/edit-paste.png) !important;
+}
+
+.icon-cut {
+    background-image: url(../bundles/koolawacore/images/koolawa/edit-cut.png) !important;
+}
+
+.icon-copy {
+    background-image: url(../bundles/koolawacore/images/koolawa/edit-copy.png) !important;
+}
+
+.icon-copy-folder {
+    background-image: url(../bundles/koolawacore/images/koolawa/folder-copy.png) !important;
+}
+
+.x-grid-row.x-grid-tree-node-expanded .tree-folder {
+    background-image: url(../bundles/koolawacore/images/koolawa/folder-open.png) !important;
+    background-repeat: no-repeat;
+}
+
+.x-grid-row .tree-folder {
+    background-image: url(../bundles/koolawacore/images/koolawa/folder.png) !important;
+    background-repeat: no-repeat;
+}
+
+.x-grid-row .tree-undeletable {
+    background-image: url(../bundles/koolawacore/images/koolawa/user-bookmarks.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-database, .x-grid-row .tree-database {
+    background-image: url(../bundles/koolawacore/images/koolawa/text-x-sql.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-sql {
+    background-image: url(../bundles/koolawacore/images/koolawa/text-richtext.png) !important;
+}
+
+.icon-save {
+    background-image: url(../bundles/koolawacore/images/koolawa/document-save.png) !important;
+}
+
+.icon-add {
+    background-image: url(../bundles/koolawacore/images/koolawa/list-add.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-refresh {
+    background-image: url(../bundles/koolawacore/images/koolawa/view-refresh.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-logout {
+    background-image: url(../bundles/koolawacore/images/koolawa/system-log-out.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-delete {
+    background-image: url(../bundles/koolawacore/images/koolawa/list-remove.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-run {
+    background-image: url(../bundles/koolawacore/images/koolawa/system-run.png) !important;
+}
+
+.icon-analyse {
+    background-image: url(../bundles/koolawacore/images/koolawa/document-properties.png) !important;
+}
+
+.icon-error {
+    background-image: url(../bundles/koolawacore/images/koolawa/dialog-error.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-home {
+    background-image: url(../bundles/koolawacore/images/koolawa/computer.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-user {
+    background-image: url(../bundles/koolawacore/images/koolawa/config-users.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-report {
+    background-image: url(../bundles/koolawacore/images/koolawa/text-xml.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-planning {
+    background-image: url(../bundles/koolawacore/images/koolawa/evolution-calendar.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-export {
+    background-image: url(../bundles/koolawacore/images/koolawa/document-export.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-group-system {
+    background-image: url(../bundles/koolawacore/images/koolawa/applications-system.png) !important;
+    background-repeat: no-repeat;
+}
+
+.icon-setting {
+    background-image: url(../bundles/koolawacore/images/koolawa/preferences-desktop.png) !important;
+    background-repeat: no-repeat;
+}
+

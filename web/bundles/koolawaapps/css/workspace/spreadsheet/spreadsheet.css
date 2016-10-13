@@ -1,0 +1,318 @@
+.spreadbox, .spreadbox * {
+   -moz-box-sizing: inherit;
+   -webkit-box-sizing: inherit;
+   box-sizing: inherit;
+}
+
+.spreadbox, .spreadbox {
+   display: inline-block;
+   /*margin: 130px;*/
+   
+   font-family: Calibri, Ubuntu;
+   font-size: 12px;
+   color: black;
+
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+
+   margin: 0;
+   padding: 0;
+}
+
+.spreadbox > div:first-child {
+   height: 20px;
+}
+
+.spreadbox .spreadboxline {
+   white-space: nowrap;
+}
+
+.spreadbox > div > div {
+   background-color: #eee;
+}
+
+.spreadbox .freezebox {
+   outline: 1px solid #aaa;
+   display: inline-block;
+   width: 50px;
+   height: 19px;
+   float: left;
+}
+
+.spreadbox .columnsbox {
+   outline: 1px solid #aaa;
+   display: inline-block;
+   width: 800px;
+   height: 20px;
+   overflow: hidden;
+   cursor: pointer;
+}
+
+.spreadbox .rowsbox {
+   outline: 1px solid #aaa;
+   display: inline-block;
+   width: 49px;
+   height: 400px;
+   overflow: hidden;
+   cursor: pointer;
+   float: left;
+   margin-right: 1px;
+}
+
+/*.spreadbox .rowsbox > div {
+	position: relative;
+    top: 1px;
+}*/
+
+.spreadbox .contener {
+   /*outline: 1px solid #aaa;*/
+   display: inline-block;
+   width: 800px;
+   height: 400px;
+}
+
+.spreadbox .resizerowbox {
+   /*display: inline-block;
+   float: right;*/
+   width: 50px;
+   height: 5px;
+   line-height: 5px;
+   position: relative;
+   cursor: n-resize;
+   top: -5px;
+}
+
+.spreadbox .resizerowbox:hover {
+   background-color: #3893FC;
+}
+
+.spreadbox .contentrowbox {
+   overflow: hidden;
+}
+
+.spreadbox .contentcolumnbox {
+   float: left;
+}
+
+.spreadbox .resizecolumnbox {
+   display: inline-block;
+   float: right;
+   width: 5px;
+   height: 19px;
+   line-height: 19px;
+   position: relative;
+   cursor: e-resize;
+}
+
+.spreadbox .resizecolumnbox:hover {
+   background-color: #3893FC;
+}
+
+.spreadbox .columnhead {
+   outline: 1px solid #aaa;
+   display: inline-block;
+   width: 100px;
+   height: 20px;
+   line-height: 20px;
+   text-align: center;
+   background-color: #eee;
+}
+
+.spreadbox .rowhead {
+   outline: 1px solid #aaa;
+   width: 50px;
+   height: 20px;
+   line-height: 20px;
+   text-align: center;
+   background-color: #eee;
+   margin-bottom: 1px;
+}
+
+.spreadbox .sheet {
+   /*outline: 1px solid #bbb;*/
+   display: inline-block;
+   width: 800px;
+   height: 400px;
+   background-color: white;
+   overflow: scroll;
+   cursor: cell;
+   position: relative;
+   /*top: 1px;*/
+}
+
+.spreadbox .cell {
+   outline: 1px solid #bbb;
+   display: inline-block;
+   background-color: white;
+   /*cursor: crosshair;*/
+}
+
+.spreadbox .sizeableVrtdiv {
+   /*background: #3893FC;*/
+   border-right: 1px solid #3893FC;
+   width: 5px;
+   position: relative;
+   top: 5px;
+   left: 0px;
+   z-index: 200;
+   cursor: e-resize;
+   display: none;
+}
+
+.spreadbox .sizeableVrtdiv > div {
+   height: 19px;
+   width: 4px;
+   background: #3893FC !important;
+}
+
+.spreadbox .sizeableHztdiv {
+   /*background: #3893FC;*/
+   border-bottom: 1px solid #3893FC;
+   line-height: 5px;
+   height: 5px !important;
+   position: relative;
+   top: 5px;
+   left: 0px;
+   margin-top: -5px;
+   z-index: 200;
+   cursor: n-resize;
+   display: none;
+}
+
+.spreadbox .sizeableHztdiv > div {
+   height: 5px;
+   line-height: 5px;
+   width: 50px;
+   background: #3893FC !important;
+}
+
+.spreadbox .row {
+   margin-bottom: 1px;
+}
+
+.spreadbox .selector1 {
+   border: 3px solid #3893FC;
+   position: relative;
+   z-index: 102;
+   visibility: hidden;
+   top: 0px;
+   left: 0px;
+   width: 10px;
+   height: 10px;
+   /*float: right;*/
+   margin-top: -10px;
+}
+
+.spreadbox .selector2 {
+   border: 1px solid #B4D0FF;
+   position: relative;
+   background: #B4D0FF;
+   z-index: 101;
+   overflow: hidden;
+   opacity: 0.3;
+   visibility: hidden;
+   top: 0px;
+   left: 0px;
+   width: 10px;
+   height: 10px;
+   margin-top: -10px;
+}
+
+.spreadbox .selector3 {
+	border: 1px solid white;
+	background: #3893FC;
+	position: relative;
+	z-index: 103;
+	visibility: hidden;
+	top: 10px;
+	left: 10px;
+	width: 7px;
+	height: 7px;
+	margin-top: -7px;
+	cursor: copy;
+	/*-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;*/
+}
+
+.spreadbox .selector2_border {
+	border: 1px solid #3893FC !important;
+}
+
+.spreadbox .columnselected {
+	/*outline: 1px solid #aaa;*/
+	background-color: #ddd;
+}
+
+.spreadbox .rowselected {
+	background-color: #ddd;
+}
+
+.functiondiv
+{
+	height: 25px;
+	display: table;
+	border-bottom: 5px solid #aaa;
+}
+
+.selectedcell
+{
+	display: table-cell;
+	height: 25px;
+	width: 150px;
+	line-height: 25px;
+    vertical-align: middle
+}
+
+.functionbutton
+{
+	display: table-cell;
+	height: 25px;
+	width: 100px;
+	background: #eee;
+	outline: 1px solid #aaa;
+	line-height: 25px;
+    vertical-align: middle
+}
+
+.functionvalue
+{
+	display: table-cell;
+	height: 25px;
+	line-height: 25px;
+    vertical-align: middle
+}
+
+.functionvalue {
+    background: #eee;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    opacity: .55;
+    /*padding: 0 0 0 8px;*/
+    display: inline-block;
+    margin-left: 1px;
+
+    transition: all .5s ease;
+}
+
+.functionvalue:hover {
+    border: 1px solid #ddd;
+    opacity: 1;
+}
+
+.functionvalue.focus {
+    box-shadow: 0 0 10px rgba(26, 154, 245, .5);
+    border: 1px solid #3893fc;  
+    outline: 0px solid transparent;
+}
+
+.celleditable {
+	background-color: yellow;
+	z-index: 50;
+	position: relative;
+}
+

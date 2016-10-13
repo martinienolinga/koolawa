@@ -1,0 +1,126 @@
+.workzone_write #write
+{
+	/*overflow: scroll;*/
+	overflow: auto;
+}
+
+.workzone_write .writepage
+{
+	background-color: white;
+    box-shadow: 0 0 10px #aaa;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: 1px solid #bbb;
+    
+    width: 800px;
+    height: 1131px;    
+}
+
+.write-paragraph
+{
+	outline: 1px dotted red;
+}
+
+/*.write-paragraph:focus
+{
+	background: pink;
+}*/
+
+:focus {
+  background: pink;
+}
+
+.write-paragraph br
+{
+	display: none;
+}
+
+.writepage .writablecontent
+{
+	/*line-height: 20px;
+	height: 20px;
+	outline: 1px solid rgba(255,0,0,0.5);
+	outline: 1px solid #ddd;*/
+	
+	box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border: 1px solid #ddd;
+    outline: 0;
+
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+.writepage .headerpage
+{
+	/*outline: 1px dotted #ddd;*/
+	box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border: 1px dotted #ddd;
+    border-bottom: 0;
+    outline: 0;
+	
+    height: 100%;
+    width: 100%;
+	background-color: rgba(200, 200, 200, 0.07);
+}
+
+.writepage .footerpage
+{
+	/*outline: 1px dotted #ddd;*/
+	box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    border: 1px dotted #ddd;
+    border-top: 0;
+    outline: 0;
+    
+    height: 100%;
+    width: 100%;
+	background-color: rgba(200, 200, 200, 0.07);
+}
+
+.workzone_write .writepage:first-child
+{
+	margin-top: 40px;
+}
+
+.workzone_write .writepage:last-child
+{
+	margin-bottom: 40px;
+}
+
+.write-ruler-panel > div > div > div[data-ref="innerCt"]
+{
+	background-color: #eee;
+}
+
+/*.write-paragraph:after, .write-paragraph > span:after
+{
+    content: '.';
+    visibility: hidden;
+	width: 20px;
+    display: inline-block;
+    margin-left: -20px;
+}*/
+
+.richtext
+{
+	cursor: text;
+}
+
+/*.beginparagraph
+{
+	background: red;
+    width: 10px;
+    display: inline-block;
+}*/
