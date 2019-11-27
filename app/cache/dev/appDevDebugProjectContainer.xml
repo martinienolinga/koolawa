@@ -586,10 +586,10 @@
     <parameter key="imag_ldap.security.authentication.form_entry_point.class">Symfony\Component\Security\Http\EntryPoint\FormAuthenticationEntryPoint</parameter>
     <parameter key="imag_ldap.ldap_connection.params" type="collection">
       <parameter key="client" type="collection">
-        <parameter key="host">10.100.1.100</parameter>
+        <parameter key="host">20.501.100</parameter>
         <parameter key="port">389</parameter>
         <parameter key="version">3</parameter>
-        <parameter key="username">bicec_synchroglpi@intra.bicec</parameter>
+        <parameter key="username">mlkj_synchroglpi@intra.mlkj</parameter>
         <parameter key="password">St3v3@T2S@</parameter>
         <parameter key="network_timeout">60</parameter>
         <parameter key="referrals_enabled">false</parameter>
@@ -597,14 +597,14 @@
         <parameter key="skip_roles">false</parameter>
       </parameter>
       <parameter key="user" type="collection">
-        <parameter key="base_dn">DC=intra,DC=bicec</parameter>
+        <parameter key="base_dn">DC=intra,DC=mlkj</parameter>
         <parameter key="filter">(objectClass=user)</parameter>
         <parameter key="name_attribute">samAccountName</parameter>
-        <parameter key="domain">intrabicec</parameter>
+        <parameter key="domain">intramlkj</parameter>
         <parameter key="attributes" type="collection"/>
       </parameter>
       <parameter key="role" type="collection">
-        <parameter key="base_dn">DC=intra,DC=bicec</parameter>
+        <parameter key="base_dn">DC=intra,DC=mlkj</parameter>
         <parameter key="name_attribute">cn</parameter>
         <parameter key="user_attribute">dn</parameter>
         <parameter key="user_id">dn</parameter>
@@ -3007,10 +3007,10 @@
           <tag name="monolog.logger" channel="ldap_connection"/>
           <argument type="collection">
             <argument key="client" type="collection">
-              <argument key="host">10.100.1.100</argument>
+              <argument key="host">20.501.100</argument>
               <argument key="port">389</argument>
               <argument key="version">3</argument>
-              <argument key="username">bicec_synchroglpi@intra.bicec</argument>
+              <argument key="username">mlkj_synchroglpi@intra.mlkj</argument>
               <argument key="password">St3v3@T2S@</argument>
               <argument key="network_timeout">60</argument>
               <argument key="referrals_enabled">false</argument>
@@ -3018,14 +3018,14 @@
               <argument key="skip_roles">false</argument>
             </argument>
             <argument key="user" type="collection">
-              <argument key="base_dn">DC=intra,DC=bicec</argument>
+              <argument key="base_dn">DC=intra,DC=mlkj</argument>
               <argument key="filter">(objectClass=user)</argument>
               <argument key="name_attribute">samAccountName</argument>
-              <argument key="domain">intrabicec</argument>
+              <argument key="domain">intramlkj</argument>
               <argument key="attributes" type="collection"/>
             </argument>
             <argument key="role" type="collection">
-              <argument key="base_dn">DC=intra,DC=bicec</argument>
+              <argument key="base_dn">DC=intra,DC=mlkj</argument>
               <argument key="name_attribute">cn</argument>
               <argument key="user_attribute">dn</argument>
               <argument key="user_id">dn</argument>

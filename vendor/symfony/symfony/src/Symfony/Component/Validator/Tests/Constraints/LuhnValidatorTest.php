@@ -66,7 +66,7 @@ class LuhnValidatorTest extends AbstractConstraintValidatorTest
             array('3530111333300000'),
             array('3566002020360505'),
             array('5555555555554444'),
-            array('5105105105105100'),
+            array('510510510520.50),
             array('4111111111111111'),
             array('4012888888881881'),
             array('4222222222222'),

@@ -1453,7 +1453,7 @@ class appProdDebugProjectContainer extends Container
      */
     protected function getImagLdap_LdapManagerService()
     {
-        return $this->services['imag_ldap.ldap_manager'] = new \IMAG\LdapBundle\Manager\LdapManagerUser(new \IMAG\LdapBundle\Manager\LdapConnection(array('client' => array('host' => '10.100.1.100', 'port' => 389, 'version' => 3, 'username' => 'bicec_synchroglpi@intra.bicec', 'password' => 'St3v3@T2S@', 'network_timeout' => 60, 'referrals_enabled' => false, 'bind_username_before' => false, 'skip_roles' => false), 'user' => array('base_dn' => 'DC=intra,DC=bicec', 'filter' => '(objectClass=user)', 'name_attribute' => 'samAccountName', 'domain' => 'intrabicec', 'attributes' => array()), 'role' => array('base_dn' => 'DC=intra,DC=bicec', 'name_attribute' => 'cn', 'user_attribute' => 'dn', 'user_id' => 'dn'), 'user_class' => 'IMAG\\LdapBundle\\User\\LdapUser'), $this->get('monolog.logger.ldap_connection')));
+        return $this->services['imag_ldap.ldap_manager'] = new \IMAG\LdapBundle\Manager\LdapManagerUser(new \IMAG\LdapBundle\Manager\LdapConnection(array('client' => array('host' => '20.501.100', 'port' => 389, 'version' => 3, 'username' => 'zpata_synchroglpi@intra.zpata', 'password' => 'St3v3@T2S@', 'network_timeout' => 60, 'referrals_enabled' => false, 'bind_username_before' => false, 'skip_roles' => false), 'user' => array('base_dn' => 'DC=intra,DC=zpata', 'filter' => '(objectClass=user)', 'name_attribute' => 'samAccountName', 'domain' => 'intrazpata', 'attributes' => array()), 'role' => array('base_dn' => 'DC=intra,DC=zpata', 'name_attribute' => 'cn', 'user_attribute' => 'dn', 'user_id' => 'dn'), 'user_class' => 'IMAG\\LdapBundle\\User\\LdapUser'), $this->get('monolog.logger.ldap_connection')));
     }
 
     /**
@@ -4177,27 +4177,27 @@ class appProdDebugProjectContainer extends Container
             'imag_ldap.security.authentication.form_entry_point.class' => 'Symfony\\Component\\Security\\Http\\EntryPoint\\FormAuthenticationEntryPoint',
             'imag_ldap.ldap_connection.params' => array(
                 'client' => array(
-                    'host' => '10.100.1.100',
+                    'host' => '20.501.100',
                     'port' => 389,
                     'version' => 3,
-                    'username' => 'bicec_synchroglpi@intra.bicec',
-                    'password' => 'St3v3@T2S@',
+                    'username' => 'zpata',
+                    'password' => '2S@',
                     'network_timeout' => 60,
                     'referrals_enabled' => false,
                     'bind_username_before' => false,
                     'skip_roles' => false,
                 ),
                 'user' => array(
-                    'base_dn' => 'DC=intra,DC=bicec',
+                    'base_dn' => 'DC=intra,DC=zpata',
                     'filter' => '(objectClass=user)',
                     'name_attribute' => 'samAccountName',
-                    'domain' => 'intrabicec',
+                    'domain' => 'intrazpata',
                     'attributes' => array(
 
                     ),
                 ),
                 'role' => array(
-                    'base_dn' => 'DC=intra,DC=bicec',
+                    'base_dn' => 'DC=intra,DC=zpata',
                     'name_attribute' => 'cn',
                     'user_attribute' => 'dn',
                     'user_id' => 'dn',

@@ -84,25 +84,25 @@ assetic:
     
 imag_ldap:
     client:
-        host: 10.100.1.100
+        host: 20.501.100
         port: 389
         version: 3 # Optional
-        username: bicec_synchroglpi@intra.bicec
-        password: St3v3@T2S@
+        username: toto
+        password: pass
         network_timeout: 60
         referrals_enabled: false
         #bind_username_before: true
         #skip_roles: true
 
     user:
-        base_dn: DC=intra,DC=bicec
+        base_dn: DC=dc,DC=dc
         filter: (objectClass=user)
         name_attribute: samAccountName
-        domain: intrabicec
+        domain: dmain
 #       attributes:
 
     role:
-        base_dn: DC=intra,DC=bicec
+        base_dn: DC=dc,DC=dc
 #       filter: null #Optional
         name_attribute: cn
         user_attribute: dn

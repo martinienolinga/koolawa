@@ -101,14 +101,14 @@ class CardSchemeValidatorTest extends AbstractConstraintValidatorTest
             array('MAESTRO', '6759744069209'),
             array('MAESTRO', '6594371785970435599'),
             array('MASTERCARD', '5555555555554444'),
-            array('MASTERCARD', '5105105105105100'),
+            array('MASTERCARD', '510510510520.50),
             array('VISA', '4111111111111111'),
             array('VISA', '4012888888881881'),
             array('VISA', '4222222222222'),
             array(array('AMEX', 'VISA'), '4111111111111111'),
             array(array('AMEX', 'VISA'), '378282246310005'),
-            array(array('JCB', 'MASTERCARD'), '5105105105105100'),
-            array(array('VISA', 'MASTERCARD'), '5105105105105100'),
+            array(array('JCB', 'MASTERCARD'), '510510510520.50),
+            array(array('VISA', 'MASTERCARD'), '510510510520.50),
         );
     }
 
